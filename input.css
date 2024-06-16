@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-display: swap;
+    font-weight: 900;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: italic;
+    font-display: swap;
+    font-weight: 400;
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+  }
+}
+
+label {
+  @apply font-["Poppins"] font-extrabold;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.error {
+  @apply text-red-400;
+}
+.error input {
+  @apply border-red-400;
+}

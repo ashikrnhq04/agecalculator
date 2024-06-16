@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body class="dark:bg-slate-700 bg-slate-100 dark:text-white relative">
+    <!-- color mode btn -->
+    <div
+      id="#colorModeBtn"
+      class="absolute top-0 right-0 p-5 dark:bg-white bg-slate-700 rounded-bl-md cursor-pointer"
+    ></div>
+
+    <!-- section -->
+    <section class="grid md:place-items-center h-svh">
+      <!-- form wrapper -->
+      <div
+        class="sm:w-[80%] lg:w-[60%] h-max rounded-3xl rounded-br-[100px] bg-white my-12 mx-4 p-6 md:m-4 md:px-16 md:py-12 dark:bg-slate-800"
+      >
+        <!-- age calculator form  -->
+        <form action="" id="age-calculator" class="w-full">
+          <div
+            class="calculator flex fexl-start flex-wrap gap-5 sm:w-[80%] lg-w-[60%]"
+          >
+            <div class="day uppercase tracking-[2px] text-gray-600 flex-1">
+              <label class="flex flex-col gap-2 cursor-pointer" for="day"
+                >day<input
+                  id="day"
+                  class="border w-full font-extrabold text-2xl border-slate-300 dark:text-white dark:bg-black text-black px-4 py-3 outline-none focus:border-purple-600 dark:focus:border-slate-800 rounded-md"
+                  type="number"
+                  name="day"
+              /></label>
+              <p
+                id="error_day"
+                class="text-sm normal-case text-red-400 mt-1 tracking-normal italic"
+              ></p>
+            </div>
+            <div class="month uppercase tracking-[2px] text-gray-600 flex-1">
+              <label for="month" class="flex flex-col gap-2 cursor-pointer"
+                >month<input
+                  id="month"
+                  type="number"
+                  name="month"
+                  class="border w-full font-extrabold text-2xl border-slate-300 dark:text-white dark:bg-black text-black px-4 py-3 outline-none focus:border-purple-600 dark:focus:border-slate-800 rounded-md"
+                />
+              </label>
+              <p
+                id="error_month"
+                class="text-sm text-red-400 mt-1 normal-case tracking-normal italic"
+              ></p>
+            </div>
+            <div class="year uppercase tracking-[2px] text-gray-600 flex-1">
+              <label class="flex flex-col gap-2 cursor-pointer" for="year"
+                >year<input
+                  type="number"
+                  id="year"
+                  name="year"
+                  class="border w-full font-extrabold text-2xl border-slate-300 dark:text-white dark:bg-black text-black px-4 py-3 outline-none focus:border-purple-600 dark:focus:border-slate-800 rounded-md"
+                />
+              </label>
+              <p
+                id="error_year"
+                class="text-sm text-red-400 mt-1 normal-case tracking-normal italic"
+              ></p>
+            </div>
+            <div
+              id="error_date"
+              class="text-sm text-red-400 flex-none w-full"
+            ></div>
+          </div>
+
+          <!-- button -->
+          <div
+            class="relative w-full h-24 md:h-16 flex justify-center items-center"
+          >
+            <div class="w-full h-px bg-gray-200"></div>
+            <button
+              type="submit"
+              class="bg-purple-600 dark:bg-black px-4 p-4 my-2 rounded-full absolute md:right-0"
+            >
+              <img src="./assets/images/icon-arrow.svg" />
+            </button>
+          </div>
+        </form>
+
+        <!-- result -->
+        <div
+          id="result"
+          class="my-5 text-5xl sm:text-7xl lg:text-9xl font-black italic font-['Poppins'] leading-tight"
+        >
+          <p id="result_year">
+            <span class="text-purple-600 dark:text-white">----</span>
+            <span class="prefix_year dark:text-slate-400">years</span>
+          </p>
+          <p id="result_month">
+            <span class="text-purple-600 dark:text-white">--</span>
+            <span class="prefix_month dark:text-slate-400">months</span>
+          </p>
+          <p id="result_day">
+            <span class="text-purple-600 dark:text-white">--</span>
+            <span class="prefix_day dark:text-slate-400">days</span>
+          </p>
+        </div>
+        <!-- result end -->
+      </div>
+      <!-- form wrapper end -->
+    </section>
+    <!-- section end -->
+    <script type="module" src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
