@@ -6,6 +6,7 @@
 #####################################################
 *.sketch
 *.fig
+/input.css
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
