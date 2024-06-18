@@ -16,7 +16,7 @@ This is a simple Figma to HTML website to perform age calculation.
 
 ## Live
 
-[Age Calculator](https://ashikrn.xyz/age-calculator/){:target="\_blank"}
+[Age Calculator](https://ashikrn.xyz/age-calculator/)
 
 ## How to run
 
