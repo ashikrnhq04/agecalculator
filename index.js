@@ -1,5 +1,12 @@
-import { checkError, printAge, getAge } from "./util/age-calculator-util.js";
-import { displayError, clearErrorsNStates } from "./util/ui-update.js";
+import {
+  checkError,
+  printAge,
+  getAge,
+} from "./util/age-calculator/age-calculator-util.js";
+import {
+  displayError,
+  clearErrorsNStates,
+} from "./util/age-calculator/ui-update.js";
 
 const darkModeBtn = document.getElementById("#colorModeBtn");
 
